@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures" : {
+    "bottom": "cursedrelics:block/cursed_stone_brick_pillar_top",
+    "side": "cursedrelics:block/cursed_stone_brick_pillar_side",
+    "top": "cursedrelics:block/cursed_stone_brick_pillar_top"
+  }
+}

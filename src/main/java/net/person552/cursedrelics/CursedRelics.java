@@ -2,6 +2,7 @@ package net.person552.cursedrelics;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.person552.cursedrelics.block.ModBlocks;
 import net.person552.cursedrelics.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,5 +21,6 @@ public class CursedRelics implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
