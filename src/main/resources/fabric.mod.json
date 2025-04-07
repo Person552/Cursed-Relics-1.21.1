@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "cursedrelics",
+	"version": "${version}",
+	"name": "Cursed Relics",
+	"description": "Adds cursed and blessed relics to the game as well as structures to find them in.",
+	"authors": [
+		"Person552",
+		"Dinoson850"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/cursedrelics/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.person552.cursedrelics.CursedRelics"
+		],
+		"fabric-datagen": [
+			"net.person552.cursedrelics.CursedRelicsDataGenerator"
+		],
+		"client": [
+			"net.person552.cursedrelics.CursedRelicsClient"
+		]
+	},
+	"mixins": [
+		"cursedrelics.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
