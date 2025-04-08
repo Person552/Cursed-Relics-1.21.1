@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "cursedrelics:block/cursed_stone_bricks",
+    "side": "cursedrelics:block/cursed_stone_bricks",
+    "top": "cursedrelics:block/cursed_stone_bricks"
+  }
+}

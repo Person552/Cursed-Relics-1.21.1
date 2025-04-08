@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cursedrelics:cursed_stone_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "cursedrelics:cursed_stone_brick_pillar"
+  }
+}
