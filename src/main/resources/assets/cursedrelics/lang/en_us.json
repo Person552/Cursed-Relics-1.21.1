@@ -6,5 +6,8 @@
   "block.cursedrelics.cursed_stone_brick_pillar": "Cursed Stone Brick Pillar",
   "block.cursedrelics.chiseled_cursed_stone_bricks": "Chiseled Cursed Stone Bricks",
 
-  "itemgroup.cursedrelics.cursed_relics_items": "Cursed Relics"
+  "itemgroup.cursedrelics.cursed_relics_items": "Cursed Relics",
+
+  "tooltip.cursedrelics.shiftinfo": "§7Hold shift for information.",
+  "tooltip.cursedrelics.caliburn": "On hit engulfs your target in §6Holy Flame§r, dealing armor piercing damage over time."
 }
