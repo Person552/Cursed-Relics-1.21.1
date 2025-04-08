@@ -28,6 +28,13 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
                     .luminance(state -> 5)));
 
+    public static final Block CHISELED_CURSED_STONE_BRICKS = registerBlock("chiseled_cursed_stone_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(3.5f, 6f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
+                    .luminance(state -> 5)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(CursedRelics.MOD_ID, name), block);
@@ -44,6 +51,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.CURSED_STONE_BRICKS);
             entries.add(ModBlocks.CURSED_STONE_BRICK_PILLAR);
+            entries.add(ModBlocks.CHISELED_CURSED_STONE_BRICKS);
         });
     }
 }
