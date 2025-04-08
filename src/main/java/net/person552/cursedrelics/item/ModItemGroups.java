@@ -18,6 +18,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.cursedrelics.cursed_relics_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CURSED_FRAGMENT);
+                        entries.add(ModItems.CALIBURN);
+
                         entries.add(ModBlocks.CURSED_STONE_BRICKS);
                         entries.add(ModBlocks.CURSED_STONE_BRICK_PILLAR);
                         entries.add(ModBlocks.CHISELED_CURSED_STONE_BRICKS);
