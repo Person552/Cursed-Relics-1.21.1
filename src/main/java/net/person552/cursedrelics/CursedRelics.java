@@ -3,6 +3,7 @@ package net.person552.cursedrelics;
 import net.fabricmc.api.ModInitializer;
 
 import net.person552.cursedrelics.block.ModBlocks;
+import net.person552.cursedrelics.effect.ModEffects;
 import net.person552.cursedrelics.item.ModItemGroups;
 import net.person552.cursedrelics.item.ModItems;
 import org.slf4j.Logger;
@@ -24,5 +25,6 @@ public class CursedRelics implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEffects.registerEffects();
 	}
 }
