@@ -18,9 +18,5 @@ public class ModItems {
 
     public static void registerModItems() {
         CursedRelics.LOGGER.info("Registering Mod Items for " + CursedRelics.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(CURSED_FRAGMENT);
-        });
     }
 }

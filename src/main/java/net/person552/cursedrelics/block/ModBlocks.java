@@ -47,11 +47,5 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         CursedRelics.LOGGER.info("Registering Mod Blocks for " + CursedRelics.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.CURSED_STONE_BRICKS);
-            entries.add(ModBlocks.CURSED_STONE_BRICK_PILLAR);
-            entries.add(ModBlocks.CHISELED_CURSED_STONE_BRICKS);
-        });
     }
 }

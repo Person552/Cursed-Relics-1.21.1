@@ -1,6 +1,9 @@
 {
   "item.cursedrelics.cursed_fragment": "Cursed Fragment",
+
   "block.cursedrelics.cursed_stone_bricks": "Cursed Stone Bricks",
   "block.cursedrelics.cursed_stone_brick_pillar": "Cursed Stone Brick Pillar",
-  "block.cursedrelics.chiseled_cursed_stone_bricks": "Chiseled Cursed Stone Bricks"
+  "block.cursedrelics.chiseled_cursed_stone_bricks": "Chiseled Cursed Stone Bricks",
+
+  "itemgroup.cursedrelics.cursed_relics_items": "Cursed Relics"
 }
