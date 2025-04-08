@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cursedrelics:block/smooth_cursed_stone"
+  }
+}

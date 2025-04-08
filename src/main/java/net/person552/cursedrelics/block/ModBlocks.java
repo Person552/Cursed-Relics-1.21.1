@@ -15,7 +15,6 @@ import net.person552.cursedrelics.CursedRelics;
 public class ModBlocks {
     public static final Block CURSED_STONE_BRICKS = registerBlock("cursed_stone_bricks",
             new Block(AbstractBlock.Settings.create()
-                    .luminance(state -> 0)
                     .strength(3.5f, 6f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
@@ -39,7 +38,9 @@ public class ModBlocks {
                     .luminance(state -> 5)));
 
     public static final Block SMOOTH_CURSED_STONE = registerBlock("smooth_cursed_stone",
-            new Block(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)));
+            new Block(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)
+                    .strength(4f, 6f)
+                    .sounds(BlockSoundGroup.DEEPSLATE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
