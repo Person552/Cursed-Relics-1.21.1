@@ -21,6 +21,9 @@ public class ModItemGroups {
                         entries.add(ModItems.CALIBURN);
 
                         entries.add(ModBlocks.CURSED_STONE_BRICKS);
+                        entries.add(ModBlocks.CURSED_STONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.CURSED_STONE_BRICK_SLAB);
+                        entries.add(ModBlocks.CURSED_STONE_BRICK_WALL);
                         entries.add(ModBlocks.CURSED_STONE_BRICK_PILLAR);
                         entries.add(ModBlocks.CHISELED_CURSED_STONE_BRICKS);
                     }).build());

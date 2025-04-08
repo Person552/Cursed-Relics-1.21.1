@@ -1,8 +1,7 @@
 package net.person552.cursedrelics.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -16,23 +15,27 @@ import net.person552.cursedrelics.CursedRelics;
 public class ModBlocks {
     public static final Block CURSED_STONE_BRICKS = registerBlock("cursed_stone_bricks",
             new Block(AbstractBlock.Settings.create()
+                    .luminance(state -> 0)
                     .strength(3.5f, 6f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
                     .instrument(NoteBlockInstrument.BASEDRUM)));
 
+    public static final Block CURSED_STONE_BRICK_STAIRS = registerBlock("cursed_stone_brick_stairs",
+            new StairsBlock(ModBlocks.CURSED_STONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)));
+
+    public static final Block CURSED_STONE_BRICK_SLAB = registerBlock("cursed_stone_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)));
+
+    public static final Block CURSED_STONE_BRICK_WALL = registerBlock("cursed_stone_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)));
+
     public static final Block CURSED_STONE_BRICK_PILLAR = registerBlock("cursed_stone_brick_pillar",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(3.5f, 6f)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
+            new PillarBlock(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)
                     .luminance(state -> 5)));
 
     public static final Block CHISELED_CURSED_STONE_BRICKS = registerBlock("chiseled_cursed_stone_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(3.5f, 6f)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
+            new Block(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)
                     .luminance(state -> 5)));
 
     private static Block registerBlock(String name, Block block) {
