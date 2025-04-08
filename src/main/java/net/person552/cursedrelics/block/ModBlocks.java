@@ -38,6 +38,9 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)
                     .luminance(state -> 5)));
 
+    public static final Block SMOOTH_CURSED_STONE = registerBlock("smooth_cursed_stone",
+            new Block(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(CursedRelics.MOD_ID, name), block);

@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "B": {
+    "#": {
       "item": "cursedrelics:cursed_stone_bricks"
     }
   },
   "pattern": [
-    "B",
-    "B"
+    "#",
+    "#"
   ],
   "result": {
     "count": 2,

@@ -1,7 +1,8 @@
-// 1.21.1	2025-04-08T01:26:05.6951955	Cursed Relics/Block Loot Tables
+// 1.21.1	2025-04-08T09:03:37.6612483	Cursed Relics/Block Loot Tables
 a6758495dec4bc7b7bd132dcff4d0697a0515495 data\cursedrelics\loot_table\blocks\cursed_stone_brick_slab.json
 8728ad2942d3724140b96dcdfb99e7ce794c4896 data\cursedrelics\loot_table\blocks\cursed_stone_bricks.json
 f06e59c4022905ab23a78606194bf5d41db5fa79 data\cursedrelics\loot_table\blocks\chiseled_cursed_stone_bricks.json
+5102cbd06ff2404e56f18446ad9e51ae1f863abd data\cursedrelics\loot_table\blocks\smooth_cursed_stone.json
 b87040d59c56198d5d988507aa6c54efbe51a3d4 data\cursedrelics\loot_table\blocks\cursed_stone_brick_wall.json
 b42b7d80c2c14bcc19506f8b822439eb087376c2 data\cursedrelics\loot_table\blocks\cursed_stone_brick_pillar.json
 0c0bad9db35cd3dc139add1d6d16ad019ba968e8 data\cursedrelics\loot_table\blocks\cursed_stone_brick_stairs.json

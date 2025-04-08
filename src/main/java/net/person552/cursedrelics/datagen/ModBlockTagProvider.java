@@ -18,7 +18,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.CHISELED_CURSED_STONE_BRICKS)
                 .add(ModBlocks.CURSED_STONE_BRICKS)
-                .add(ModBlocks.CURSED_STONE_BRICK_PILLAR);
+                .add(ModBlocks.CURSED_STONE_BRICK_PILLAR)
+                .add(ModBlocks.SMOOTH_CURSED_STONE);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.CURSED_STONE_BRICK_WALL);

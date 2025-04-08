@@ -26,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CURSED_STONE_BRICK_WALL);
                         entries.add(ModBlocks.CURSED_STONE_BRICK_PILLAR);
                         entries.add(ModBlocks.CHISELED_CURSED_STONE_BRICKS);
+                        entries.add(ModBlocks.SMOOTH_CURSED_STONE);
                     }).build());
 
 

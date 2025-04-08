@@ -26,14 +26,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CURSED_STONE_BRICK_SLAB, ModBlocks.CURSED_STONE_BRICKS, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CURSED_STONE_BRICK_STAIRS, ModBlocks.CURSED_STONE_BRICKS, 1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CURSED_STONE_BRICK_WALL, ModBlocks.CURSED_STONE_BRICKS, 1);
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_CURSED_STONE_BRICKS, ModBlocks.CURSED_STONE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CURSED_STONE_BRICK_PILLAR, ModBlocks.CURSED_STONE_BRICKS);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CURSED_STONE_BRICK_PILLAR, 2)
-                .pattern("B")
-                .pattern("B")
-                .input('B', ModBlocks.CURSED_STONE_BRICKS)
+                .pattern("#")
+                .pattern("#")
+                .input('#', ModBlocks.CURSED_STONE_BRICKS)
+                .criterion(hasItem(ModBlocks.CURSED_STONE_BRICKS), conditionsFromItem(ModBlocks.CURSED_STONE_BRICKS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_CURSED_STONE_BRICKS, 1)
+                .pattern("#")
+                .pattern("#")
+                .input('#', ModBlocks.CURSED_STONE_BRICK_SLAB)
                 .criterion(hasItem(ModBlocks.CURSED_STONE_BRICKS), conditionsFromItem(ModBlocks.CURSED_STONE_BRICKS))
                 .offerTo(exporter);
     }
