@@ -15,13 +15,13 @@ public class HolyFireEffect extends StatusEffect {
 
     @Override
     public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
-        entity.damage(entity.getDamageSources().onFire(), amplifier * 3f);
+        entity.damage(entity.getDamageSources().magic(), amplifier * 3f);
 
         return super.applyUpdateEffect(entity, amplifier);
     }
 
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
-        return duration % 25 == 0;
+        return duration % 20 == 0;
     }
 }
