@@ -19,6 +19,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CURSED_STONE_BRICK_WALL, ModBlocks.CURSED_STONE_BRICKS);
         createStairsRecipe(ModBlocks.CURSED_STONE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.CURSED_STONE_BRICKS))
                 .criterion(hasItem(ModBlocks.CURSED_STONE_BRICKS), conditionsFromItem(ModBlocks.CURSED_STONE_BRICKS))
                 .offerTo(exporter);
