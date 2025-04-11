@@ -3,13 +3,13 @@ package net.person552.cursedrelics.effect;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.particle.ParticleTypes;
+import net.person552.cursedrelics.particle.ModParticles;
 
 import java.util.Objects;
 
 public class HolyFireEffect extends StatusEffect {
     public HolyFireEffect(StatusEffectCategory category, int color) {
-        super(category, color, ParticleTypes.LAVA);
+        super(category, color, ModParticles.HOLY_FIRE_PARTICLE);
     }
 
 

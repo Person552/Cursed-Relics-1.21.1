@@ -31,7 +31,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.CURSED_FRAGMENT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CALIBURN, Items.GOLDEN_SWORD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CALIBURN, Models.GENERATED);
     }
 
 
