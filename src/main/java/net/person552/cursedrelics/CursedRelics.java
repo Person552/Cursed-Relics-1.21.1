@@ -7,6 +7,7 @@ import net.person552.cursedrelics.effect.ModEffects;
 import net.person552.cursedrelics.item.ModItemGroups;
 import net.person552.cursedrelics.item.ModItems;
 import net.person552.cursedrelics.particle.ModParticles;
+import net.person552.cursedrelics.sound.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,5 +29,6 @@ public class CursedRelics implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModEffects.registerEffects();
 		ModParticles.registerParticles();
+		ModSounds.registerModSounds();
 	}
 }
