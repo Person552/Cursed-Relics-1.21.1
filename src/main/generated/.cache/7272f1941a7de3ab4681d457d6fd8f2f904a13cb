@@ -1,8 +1,8 @@
-// 1.21.1	2025-04-09T22:26:38.0126763	Cursed Relics/Model Definitions
+// 1.21.1	2025-04-10T17:43:10.3902164	Cursed Relics/Model Definitions
 eb209f451cc42d22e4f76de1f8f63b06648eb8a4 assets\cursedrelics\models\item\cursed_fragment.json
 9870969a1030da0b24b5160f507768dfed27dad0 assets\cursedrelics\blockstates\cursed_stone_brick_wall.json
-17830e269af1e636df709a8646eafca6260f057f assets\cursedrelics\models\item\cursed_stone_brick_pillar.json
 d05c5258b1f8004516a90db61b3085c5ac944219 assets\cursedrelics\models\item\cursed_stone_bricks.json
+17830e269af1e636df709a8646eafca6260f057f assets\cursedrelics\models\item\cursed_stone_brick_pillar.json
 bf9a2ef62734b8cf3487c5b30c0ec55a962d14d4 assets\cursedrelics\models\item\cursed_stone_brick_slab.json
 12eb5f65c075d88ec1a83f0db026c3e93f65bc11 assets\cursedrelics\models\block\chiseled_cursed_stone_bricks.json
 9e7f08953533dc573b3eb5bd12f8e258bbcc84fc assets\cursedrelics\models\item\smooth_cursed_stone.json

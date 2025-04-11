@@ -2,6 +2,7 @@ package net.person552.cursedrelics.particle;
 
 import net.minecraft.client.particle.*;
 import net.minecraft.client.world.ClientWorld;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.particle.SimpleParticleType;
 import org.jetbrains.annotations.Nullable;
 
@@ -18,6 +19,31 @@ public class HolyFireParticle extends SpriteBillboardParticle {
         this.velocityY = this.random.nextFloat() * 0.15F + 0.05F;
         this.scale = this.scale * (this.random.nextFloat() * 2.0F + 0.2F);
         this.maxAge = (int)(16.0 / (Math.random() * 0.8 + 0.2));
+    }
+
+    @Override
+    public int getBrightness(float tint) {
+        int i = super.getBrightness(tint);
+        int j = 240;
+        int k = i >> 16 & 0xFF;
+        return 240 | k << 16;
+    }
+
+    @Override
+    public float getSize(float tickDelta) {
+        float f = (this.age + tickDelta) / this.maxAge;
+        return this.scale * (1.0F - f * f);
+    }
+
+    @Override
+    public void tick() {
+        super.tick();
+        if (!this.dead) {
+            float f = (float)this.age / this.maxAge;
+            if (this.random.nextFloat() > f) {
+                this.world.addParticle(ParticleTypes.SMOKE, this.x, this.y, this.z, this.velocityX, this.velocityY, this.velocityZ);
+            }
+        }
     }
 
     @Override
