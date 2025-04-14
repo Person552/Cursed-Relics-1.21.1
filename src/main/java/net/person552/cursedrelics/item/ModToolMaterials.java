@@ -5,13 +5,12 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    RELIC(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3270, 8.0F, 4.0F, 15, () -> Ingredient.ofItems(ModItems.CURSED_FRAGMENT));
+    RELIC(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3270, 8.0F, 4.0F, 15, () -> Ingredient.ofItems(ModItems.CURSED_RUNE));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

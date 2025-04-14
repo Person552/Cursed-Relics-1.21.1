@@ -14,10 +14,10 @@ public class ModItemGroups {
     public static final ItemGroup CURSED_RELICS_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(CursedRelics.MOD_ID, "cursed_relics_items"),
             FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModItems.CURSED_FRAGMENT))
+                    .icon(() -> new ItemStack(ModItems.CURSED_RUNE))
                     .displayName(Text.translatable("itemgroup.cursedrelics.cursed_relics_items"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.CURSED_FRAGMENT);
+                        entries.add(ModItems.CURSED_RUNE);
                         entries.add(ModItems.CALIBURN);
 
                         entries.add(ModBlocks.CURSED_STONE_BRICKS);

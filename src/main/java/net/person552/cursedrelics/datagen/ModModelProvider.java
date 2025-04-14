@@ -6,7 +6,6 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TexturedModel;
-import net.minecraft.item.Items;
 import net.person552.cursedrelics.block.ModBlocks;
 import net.person552.cursedrelics.item.ModItems;
 
@@ -30,7 +29,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.CURSED_FRAGMENT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CURSED_RUNE, Models.GENERATED);
     }
 
 
