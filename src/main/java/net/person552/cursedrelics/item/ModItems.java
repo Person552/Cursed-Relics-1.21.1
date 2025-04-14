@@ -14,7 +14,7 @@ import net.person552.cursedrelics.item.Custom.CaliburnItem;
 public class ModItems {
 
     public static final Item CURSED_FRAGMENT = registerItem("cursed_fragment", new Item(new Item.Settings()));
-    public static final Item CALIBURN = registerItem("caliburn", new CaliburnItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.6F))));
+    public static final Item CALIBURN = registerItem("caliburn", new CaliburnItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 6, -3F))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(CursedRelics.MOD_ID, name), item);
