@@ -19,6 +19,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CURSED_RUNE);
                         entries.add(ModItems.CALIBURN);
+                        entries.add(ModItems.XIPHANOX);
 
                         entries.add(ModBlocks.CURSED_STONE_BRICKS);
                         entries.add(ModBlocks.CURSED_STONE_BRICK_STAIRS);

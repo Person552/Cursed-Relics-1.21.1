@@ -8,7 +8,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.tooltip.TooltipType;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.text.Text;
 import net.person552.cursedrelics.CursedRelics;
 import net.person552.cursedrelics.effect.ModEffects;
@@ -37,7 +36,7 @@ public class CaliburnItem extends SwordItem {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.cursedrelics.caliburn"));
         } else {
-            tooltip.add(Text.translatable("tooltip.cursedrelics.shiftinfo"));
+            tooltip.add(Text.translatable("tooltip.cursedrelics.shift_info"));
         }
 
         super.appendTooltip(stack, context, tooltip, type);

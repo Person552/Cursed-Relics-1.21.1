@@ -1,6 +1,7 @@
 {
   "item.cursedrelics.cursed_rune": "Cursed Rune",
   "item.cursedrelics.caliburn": "Caliburn",
+  "item.cursedrelics.xiphanox": "Xiphanox",
 
   "block.cursedrelics.cursed_stone_bricks": "Cursed Stone Bricks",
   "block.cursedrelics.cursed_stone_brick_stairs": "Cursed Stone Brick Stairs",
@@ -12,7 +13,7 @@
 
   "itemgroup.cursedrelics.cursed_relics_items": "Cursed Relics",
 
-  "tooltip.cursedrelics.shiftinfo": "§7Hold shift for information.",
+  "tooltip.cursedrelics.shift_info": "§7Hold shift for information.",
   "tooltip.cursedrelics.caliburn": "On hit engulfs your target in §6Holy Flame§r, dealing armor piercing damage over time.",
 
   "effect.cursedrelics.holy_fire": "Holy Fire",
