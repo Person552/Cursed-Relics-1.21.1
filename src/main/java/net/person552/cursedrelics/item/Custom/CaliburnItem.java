@@ -25,7 +25,7 @@ public class CaliburnItem extends SwordItem {
             if (attacker instanceof PlayerEntity) {
                 CursedRelics.LOGGER.info(String.valueOf(((PlayerEntity) attacker).getAttackCooldownProgress(2f)));
             }
-            var instance = new StatusEffectInstance(ModEffects.HOLY_FIRE, 70, 1, false, true, true);
+            var instance = new StatusEffectInstance(ModEffects.HOLY_FIRE, 70, 0, false, true, true);
             target.addStatusEffect(instance);
         }
         return super.postHit(stack, target, attacker);
