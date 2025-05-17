@@ -15,13 +15,13 @@
       "scale": [ 1.7, 1.7, 1.7 ]
     },
     "firstperson_righthand": {
-      "rotation": [ 0, -90, 25 ],
-      "translation": [ 1.13, 3.2, 1.13 ],
+      "rotation": [ 0, 0, 115 ],
+      "translation": [ -4.5, 1.2, 1.13 ],
       "scale": [ 1.36, 1.36, 1.36 ]
     },
     "firstperson_lefthand": {
       "rotation": [ 0, 90, -25 ],
-      "translation": [ 1.13, 3.2, 1.13 ],
+      "translation": [ 1.13, 0, 1.13 ],
       "scale": [ 1.36, 1.36, 1.36 ]
     },
     "ground": {
@@ -29,13 +29,5 @@
       "translation": [ 0, 4, 0],
       "scale":[ 1, 1, 1 ]
     }
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "cursedrelics:blocking": 1
-      },
-      "model": "cursedrelics:item/xiphanox_blocking"
-    }
-  ]
+  }
 }
