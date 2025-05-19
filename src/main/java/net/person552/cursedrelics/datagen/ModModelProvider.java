@@ -30,6 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.CURSED_RUNE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CURSED_KEY, Models.GENERATED);
     }
 
 

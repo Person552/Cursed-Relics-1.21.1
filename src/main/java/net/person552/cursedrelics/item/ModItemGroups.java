@@ -18,6 +18,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.cursedrelics.cursed_relics_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CURSED_RUNE);
+                        entries.add(ModItems.CURSED_KEY);
+
                         entries.add(ModItems.CALIBURN);
                         entries.add(ModItems.XIPHANOX);
 
