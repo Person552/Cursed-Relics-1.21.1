@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "cursedrelics:block/cursed_trial_spawner_bottom",
+    "side": "cursedrelics:block/cursed_trial_spawner_side_active",
+    "top": "cursedrelics:block/cursed_trial_spawner_top_ejecting_reward"
+  }
+}

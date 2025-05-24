@@ -1,4 +1,4 @@
-package net.person552.cursedrelics.item.Custom;
+package net.person552.cursedrelics.item.custom;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;

@@ -6,8 +6,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.person552.cursedrelics.CursedRelics;
-import net.person552.cursedrelics.item.Custom.CaliburnItem;
-import net.person552.cursedrelics.item.Custom.XiphanoxItem;
+import net.person552.cursedrelics.item.custom.CaliburnItem;
+import net.person552.cursedrelics.item.custom.XiphanoxItem;
 
 public class ModItems {
 

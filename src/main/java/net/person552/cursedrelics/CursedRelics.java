@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.person552.cursedrelics.block.ModBlocks;
 import net.person552.cursedrelics.component.ModDataComponentTypes;
 import net.person552.cursedrelics.effect.ModEffects;
+import net.person552.cursedrelics.entity.ModBlockEntities;
 import net.person552.cursedrelics.item.ModItemGroups;
 import net.person552.cursedrelics.item.ModItems;
 import net.person552.cursedrelics.particle.ModParticles;
@@ -33,6 +34,6 @@ public class CursedRelics implements ModInitializer {
 		ModParticles.registerParticles();
 		ModSounds.registerModSounds();
 		ModDataComponentTypes.registerDataComponentTypes();
-		ModModelPredicates.registerModelPredicates();
+		ModBlockEntities.RegisterBlockEntities();
 	}
 }

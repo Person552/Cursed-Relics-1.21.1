@@ -5,7 +5,6 @@
   "item.cursedrelics.caliburn": "Caliburn",
   "item.cursedrelics.xiphanox": "Xiphanox",
 
-
   "block.cursedrelics.cursed_stone_bricks": "Cursed Stone Bricks",
   "block.cursedrelics.cursed_stone_brick_stairs": "Cursed Stone Brick Stairs",
   "block.cursedrelics.cursed_stone_brick_slab": "Cursed Stone Brick Slab",
@@ -13,6 +12,8 @@
   "block.cursedrelics.cursed_stone_brick_pillar": "Cursed Stone Brick Pillar",
   "block.cursedrelics.chiseled_cursed_stone_bricks": "Chiseled Cursed Stone Bricks",
   "block.cursedrelics.smooth_cursed_stone": "Smooth Cursed Stone",
+
+  "block.cursedrelics.cursed_trial_spawner": "Cursed Trial Spawner",
 
   "itemgroup.cursedrelics.cursed_relics_items": "Cursed Relics",
 

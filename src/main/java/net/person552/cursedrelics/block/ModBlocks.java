@@ -1,16 +1,15 @@
 package net.person552.cursedrelics.block;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.person552.cursedrelics.CursedRelics;
+import net.person552.cursedrelics.block.custom.CursedTrialSpawnerBlock;
 
 public class ModBlocks {
     public static final Block CURSED_STONE_BRICKS = registerBlock("cursed_stone_bricks",
@@ -41,6 +40,9 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)
                     .strength(4f, 6f)
                     .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final CursedTrialSpawnerBlock CURSED_TRIAL_SPAWNER = (CursedTrialSpawnerBlock) registerBlock("cursed_trial_spawner",
+            new CursedTrialSpawnerBlock(AbstractBlock.Settings.copy(Blocks.TRIAL_SPAWNER).nonOpaque().blockVision(Blocks::never)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
