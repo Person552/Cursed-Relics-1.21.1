@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cursedrelics:block/chiseled_cursed_stone_bricks_l"
+  }
+}

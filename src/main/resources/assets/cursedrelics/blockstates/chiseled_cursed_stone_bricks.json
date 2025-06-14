@@ -1,0 +1,54 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_a", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_b", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_c", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_d", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_e", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_f", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_g", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_h", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_i", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_j", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_k", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_l", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_m", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_n", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_o", "weight": 1
+      },
+      {
+        "model": "cursedrelics:block/chiseled_cursed_stone_bricks_p", "weight": 1
+      }
+    ]
+  }
+}
