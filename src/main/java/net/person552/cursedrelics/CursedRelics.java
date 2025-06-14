@@ -10,7 +10,6 @@ import net.person552.cursedrelics.item.ModItemGroups;
 import net.person552.cursedrelics.item.ModItems;
 import net.person552.cursedrelics.particle.ModParticles;
 import net.person552.cursedrelics.sound.ModSounds;
-import net.person552.cursedrelics.util.ModModelPredicates;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,6 +33,6 @@ public class CursedRelics implements ModInitializer {
 		ModParticles.registerParticles();
 		ModSounds.registerModSounds();
 		ModDataComponentTypes.registerDataComponentTypes();
-		ModBlockEntities.RegisterBlockEntities();
+		ModBlockEntities.registerBlockEntities();
 	}
 }

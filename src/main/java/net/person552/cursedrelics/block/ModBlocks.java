@@ -10,6 +10,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.person552.cursedrelics.CursedRelics;
 import net.person552.cursedrelics.block.custom.CursedTrialSpawnerBlock;
+import net.person552.cursedrelics.block.custom.CursedVaultBlock;
 
 public class ModBlocks {
     public static final Block CURSED_STONE_BRICKS = registerBlock("cursed_stone_bricks",
@@ -42,7 +43,10 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.DEEPSLATE)));
 
     public static final CursedTrialSpawnerBlock CURSED_TRIAL_SPAWNER = (CursedTrialSpawnerBlock) registerBlock("cursed_trial_spawner",
-            new CursedTrialSpawnerBlock(AbstractBlock.Settings.copy(Blocks.TRIAL_SPAWNER).nonOpaque().blockVision(Blocks::never)));
+            new CursedTrialSpawnerBlock(AbstractBlock.Settings.copy(Blocks.TRIAL_SPAWNER)));
+
+    public static final CursedVaultBlock CURSED_VAULT = (CursedVaultBlock) registerBlock("cursed_vault",
+            new CursedVaultBlock(AbstractBlock.Settings.copy(Blocks.VAULT)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

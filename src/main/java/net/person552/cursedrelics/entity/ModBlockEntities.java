@@ -13,7 +13,11 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(CursedRelics.MOD_ID, "cursed_trial_spawner_be"),
                     BlockEntityType.Builder.create(CursedTrialSpawnerBlockEntity::new, ModBlocks.CURSED_TRIAL_SPAWNER).build(null));
 
-    public static void RegisterBlockEntities() {
+    public static final BlockEntityType<CursedTrialSpawnerBlockEntity> CURSED_VAULT_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(CursedRelics.MOD_ID, "cursed_vault_be"),
+                    BlockEntityType.Builder.create(CursedTrialSpawnerBlockEntity::new, ModBlocks.CURSED_VAULT).build(null));
+
+    public static void registerBlockEntities() {
         CursedRelics.LOGGER.info("Registering Mod Block Entities for " + CursedRelics.MOD_ID);
     }
 }

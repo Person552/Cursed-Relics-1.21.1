@@ -15,6 +15,7 @@ public class CursedRelicsClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(ModParticles.HOLY_FIRE_PARTICLE, HolyFireParticle.Factory::new);
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CURSED_TRIAL_SPAWNER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CURSED_VAULT, RenderLayer.getCutout());
 
         ModModelPredicates.registerModelPredicates();
     }
