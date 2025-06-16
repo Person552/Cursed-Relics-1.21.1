@@ -21,10 +21,10 @@
 
   "tooltip.cursedrelics.shift_info": "§7Hold shift for information.",
   "tooltip.cursedrelics.caliburn": "On hit engulfs your target in §6Holy Flame§r, dealing armor piercing damage over time.",
-  "tooltip.cursedrelics.laceract": "On hit applies a stacking mark to your target, dealing heavy damage once it expires.",
+  "tooltip.cursedrelics.laceract": "On hit applies a stacking curse (Max 5 stacks) to your target, dealing heavy damage once it expires.",
 
   "effect.cursedrelics.holy_fire": "Holy Fire",
-  "effect.cursedrelics.cursed_collapse": "Cursed Collapse",
+  "effect.cursedrelics.cursed_collapse": "Curse of Shattering",
 
   "death.attack.holy_fire": "%1$s was consumed by holy flames."
 }
