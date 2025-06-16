@@ -17,6 +17,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.XIPHANOX)
-                .add(ModItems.CALIBURN);
+                .add(ModItems.CALIBURN)
+                .add(ModItems.LACERACT);
     }
 }

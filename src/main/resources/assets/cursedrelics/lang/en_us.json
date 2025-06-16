@@ -4,6 +4,7 @@
 
   "item.cursedrelics.caliburn": "Caliburn",
   "item.cursedrelics.xiphanox": "Xiphanox",
+  "item.cursedrelics.laceract": "Laceract",
 
   "block.cursedrelics.cursed_stone_bricks": "Cursed Stone Bricks",
   "block.cursedrelics.cursed_stone_brick_stairs": "Cursed Stone Brick Stairs",
@@ -20,8 +21,10 @@
 
   "tooltip.cursedrelics.shift_info": "§7Hold shift for information.",
   "tooltip.cursedrelics.caliburn": "On hit engulfs your target in §6Holy Flame§r, dealing armor piercing damage over time.",
+  "tooltip.cursedrelics.laceract": "On hit applies a stacking mark to your target, dealing heavy damage once it expires.",
 
   "effect.cursedrelics.holy_fire": "Holy Fire",
+  "effect.cursedrelics.cursed_collapse": "Cursed Collapse",
 
   "death.attack.holy_fire": "%1$s was consumed by holy flames."
 }

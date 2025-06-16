@@ -22,6 +22,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CALIBURN);
                         entries.add(ModItems.XIPHANOX);
+                        entries.add(ModItems.LACERACT);
 
                         entries.add(ModBlocks.CURSED_STONE_BRICKS);
                         entries.add(ModBlocks.CURSED_STONE_BRICK_STAIRS);

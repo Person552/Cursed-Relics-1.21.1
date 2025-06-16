@@ -7,6 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.person552.cursedrelics.CursedRelics;
 import net.person552.cursedrelics.item.custom.CaliburnItem;
+import net.person552.cursedrelics.item.custom.LaceractItem;
 import net.person552.cursedrelics.item.custom.XiphanoxItem;
 
 public class ModItems {
@@ -16,6 +17,7 @@ public class ModItems {
     
     public static final Item CALIBURN = registerItem("caliburn", new CaliburnItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 6, -3F))));
     public static final Item XIPHANOX = registerItem("xiphanox", new XiphanoxItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 6, -3F))));
+    public static final Item LACERACT = registerItem("laceract", new LaceractItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 0, -2F))));
 
 
     private static Item registerItem(String name, Item item) {

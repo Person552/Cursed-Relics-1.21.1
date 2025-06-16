@@ -12,6 +12,9 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> HOLY_FIRE = registerStatusEffect("holy_fire",
             new HolyFireEffect(StatusEffectCategory.HARMFUL,  0xffea96));
 
+    public static final RegistryEntry<StatusEffect> CURSED_COLLAPSE = registerStatusEffect("cursed_collapse",
+            new CursedCollapseEffect(StatusEffectCategory.HARMFUL,  0x262217));
+
     public static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(CursedRelics.MOD_ID, name), statusEffect);
     }
