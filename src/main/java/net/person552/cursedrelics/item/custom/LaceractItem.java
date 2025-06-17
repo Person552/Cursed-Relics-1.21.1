@@ -32,7 +32,7 @@ public class LaceractItem extends SwordItem {
             ServerWorld world = (ServerWorld) attacker.getWorld();
             var amplifier = 0;
             if (target.hasStatusEffect(ModEffects.CURSED_COLLAPSE)) {
-                if (target.getStatusEffect(ModEffects.CURSED_COLLAPSE).getAmplifier() > 4) {
+                if (target.getStatusEffect(ModEffects.CURSED_COLLAPSE).getAmplifier() >= 4) {
                     amplifier = 4;
                 } else {
                     amplifier = target.getStatusEffect(ModEffects.CURSED_COLLAPSE).getAmplifier() + 1;
