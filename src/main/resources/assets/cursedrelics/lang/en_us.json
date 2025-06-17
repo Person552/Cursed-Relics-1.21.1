@@ -1,5 +1,9 @@
 {
   "item.cursedrelics.cursed_rune": "Cursed Rune",
+  "item.cursedrelics.cursed_fragment": "Cursed Fragment",
+  "item.cursedrelics.cursed_handle": "Cursed Handle",
+  "item.cursedrelics.cursed_ingot": "Cursed Ingot",
+
   "item.cursedrelics.cursed_key": "Cursed Key",
 
   "item.cursedrelics.caliburn": "Caliburn",

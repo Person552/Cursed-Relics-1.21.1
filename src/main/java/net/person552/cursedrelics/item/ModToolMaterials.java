@@ -10,7 +10,7 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    RELIC(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3270, 8.0F, 4.0F, 15, () -> Ingredient.ofItems(ModItems.CURSED_RUNE));
+    RELIC(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3270, 8.0F, 4.0F, 15, () -> Ingredient.ofItems(ModItems.CURSED_INGOT));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

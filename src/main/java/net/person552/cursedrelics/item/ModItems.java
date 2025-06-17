@@ -13,6 +13,11 @@ import net.person552.cursedrelics.item.custom.XiphanoxItem;
 public class ModItems {
 
     public static final Item CURSED_RUNE = registerItem("cursed_rune", new Item(new Item.Settings()));
+    public static final Item CURSED_FRAGMENT = registerItem("cursed_fragment", new Item(new Item.Settings()));
+    public static final Item CURSED_HANDLE = registerItem("cursed_handle", new Item(new Item.Settings()));
+    public static final Item CURSED_INGOT = registerItem("cursed_ingot", new Item(new Item.Settings()));
+
+
     public static final Item CURSED_KEY = registerItem("cursed_key", new Item(new Item.Settings()));
     
     public static final Item CALIBURN = registerItem("caliburn", new CaliburnItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 6, -3F))));
