@@ -39,7 +39,6 @@ public class LaceractItem extends SwordItem {
                 }
             }
             var instance = new StatusEffectInstance(ModEffects.CURSED_COLLAPSE, 40, amplifier, false, false, true);
-            CursedRelics.LOGGER.info(String.valueOf(amplifier));
             target.setStatusEffect(instance, attacker);
 
             world.playSoundFromEntity(null, target, SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 2.0f, 0.8f + amplifier*0.3f);
