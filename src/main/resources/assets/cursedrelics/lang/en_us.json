@@ -14,9 +14,15 @@
   "block.cursedrelics.cursed_stone_brick_stairs": "Cursed Stone Brick Stairs",
   "block.cursedrelics.cursed_stone_brick_slab": "Cursed Stone Brick Slab",
   "block.cursedrelics.cursed_stone_brick_wall": "Cursed Stone Brick Wall",
+  "block.cursedrelics.cursed_stone_brick_pressure_plate": "Cursed Stone Brick Pressure Plate",
+
   "block.cursedrelics.cursed_stone_brick_pillar": "Cursed Stone Brick Pillar",
   "block.cursedrelics.chiseled_cursed_stone_bricks": "Chiseled Cursed Stone Bricks",
+
   "block.cursedrelics.smooth_cursed_stone": "Smooth Cursed Stone",
+  "block.cursedrelics.smooth_cursed_stone_slab": "Smooth Cursed Stone Slab",
+  "block.cursedrelics.smooth_cursed_stone_pressure_plate": "Smooth Cursed Stone Pressure Plate",
+  "block.cursedrelics.smooth_cursed_stone_stairs": "Smooth Cursed Stone Stairs",
 
   "block.cursedrelics.cursed_trial_spawner": "Cursed Trial Spawner",
   "block.cursedrelics.cursed_vault": "Cursed Vault",

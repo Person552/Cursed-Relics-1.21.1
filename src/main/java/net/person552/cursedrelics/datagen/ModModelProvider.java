@@ -17,13 +17,18 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool cursedStoneBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CURSED_STONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool smoothCursedStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_CURSED_STONE);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SMOOTH_CURSED_STONE);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.CURSED_STONE_BRICK_PILLAR, TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
 
         cursedStoneBricksPool.stairs(ModBlocks.CURSED_STONE_BRICK_STAIRS);
         cursedStoneBricksPool.slab(ModBlocks.CURSED_STONE_BRICK_SLAB);
         cursedStoneBricksPool.wall(ModBlocks.CURSED_STONE_BRICK_WALL);
+        cursedStoneBricksPool.pressurePlate(ModBlocks.CURSED_STONE_BRICK_PRESSURE_PLATE);
+
+        smoothCursedStonePool.stairs(ModBlocks.SMOOTH_CURSED_STONE_STAIRS);
+        smoothCursedStonePool.slab(ModBlocks.SMOOTH_CURSED_STONE_SLAB);
+        smoothCursedStonePool.pressurePlate(ModBlocks.SMOOTH_CURSED_STONE_PRESSURE_PLATE);
     }
 
     @Override

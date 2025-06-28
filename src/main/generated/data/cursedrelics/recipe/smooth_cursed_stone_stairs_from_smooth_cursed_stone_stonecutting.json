@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cursedrelics:smooth_cursed_stone"
+  },
+  "result": {
+    "count": 1,
+    "id": "cursedrelics:smooth_cursed_stone_stairs"
+  }
+}

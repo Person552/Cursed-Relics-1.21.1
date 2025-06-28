@@ -29,6 +29,10 @@ public class ModBlocks {
     public static final Block CURSED_STONE_BRICK_WALL = registerBlock("cursed_stone_brick_wall",
             new WallBlock(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)));
 
+    public static final Block CURSED_STONE_BRICK_PRESSURE_PLATE = registerBlock("cursed_stone_brick_pressure_plate",
+            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)));
+
+
     public static final Block CURSED_STONE_BRICK_PILLAR = registerBlock("cursed_stone_brick_pillar",
             new PillarBlock(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)
                     .luminance(state -> 5)));
@@ -37,10 +41,21 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)
                     .luminance(state -> 5)));
 
+
     public static final Block SMOOTH_CURSED_STONE = registerBlock("smooth_cursed_stone",
             new Block(AbstractBlock.Settings.copy(CURSED_STONE_BRICKS)
                     .strength(4f, 6f)
                     .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block SMOOTH_CURSED_STONE_STAIRS = registerBlock("smooth_cursed_stone_stairs",
+            new StairsBlock(ModBlocks.SMOOTH_CURSED_STONE.getDefaultState(), AbstractBlock.Settings.copy(SMOOTH_CURSED_STONE)));
+
+    public static final Block SMOOTH_CURSED_STONE_SLAB = registerBlock("smooth_cursed_stone_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(SMOOTH_CURSED_STONE)));
+
+    public static final Block SMOOTH_CURSED_STONE_PRESSURE_PLATE = registerBlock("smooth_cursed_stone_pressure_plate",
+            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(SMOOTH_CURSED_STONE)));
+
 
     public static final CursedTrialSpawnerBlock CURSED_TRIAL_SPAWNER = (CursedTrialSpawnerBlock) registerBlock("cursed_trial_spawner",
             new CursedTrialSpawnerBlock(AbstractBlock.Settings.copy(Blocks.TRIAL_SPAWNER)));

@@ -23,5 +23,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.CURSED_STONE_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.SMOOTH_CURSED_STONE_PRESSURE_PLATE)
+                .add(ModBlocks.CURSED_STONE_BRICK_PRESSURE_PLATE);
     }
 }

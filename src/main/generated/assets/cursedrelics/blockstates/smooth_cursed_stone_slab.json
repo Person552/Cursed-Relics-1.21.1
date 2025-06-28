@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cursedrelics:block/smooth_cursed_stone_slab"
+    },
+    "type=double": {
+      "model": "cursedrelics:block/smooth_cursed_stone"
+    },
+    "type=top": {
+      "model": "cursedrelics:block/smooth_cursed_stone_slab_top"
+    }
+  }
+}

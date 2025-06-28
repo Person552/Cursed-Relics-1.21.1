@@ -32,9 +32,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CURSED_STONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CURSED_STONE_BRICK_SLAB);
                         entries.add(ModBlocks.CURSED_STONE_BRICK_WALL);
+                        entries.add(ModBlocks.CURSED_STONE_BRICK_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.SMOOTH_CURSED_STONE);
+                        entries.add(ModBlocks.SMOOTH_CURSED_STONE_STAIRS);
+                        entries.add(ModBlocks.SMOOTH_CURSED_STONE_SLAB);
+                        entries.add(ModBlocks.SMOOTH_CURSED_STONE_PRESSURE_PLATE);
+
                         entries.add(ModBlocks.CURSED_STONE_BRICK_PILLAR);
                         entries.add(ModBlocks.CHISELED_CURSED_STONE_BRICKS);
-                        entries.add(ModBlocks.SMOOTH_CURSED_STONE);
 
                         entries.add(ModBlocks.CURSED_TRIAL_SPAWNER);
                     }).build());
