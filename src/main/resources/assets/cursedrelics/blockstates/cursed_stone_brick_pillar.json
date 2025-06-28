@@ -1,0 +1,370 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_1",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_2",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_3",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_4",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_5",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_6",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_7",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_8",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_9",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_10",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_11",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_12",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_13",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_14",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_15",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_16",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_17",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_18",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_19",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_20",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_21",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_22",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_23",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_24",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_25",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_26",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_27",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_28",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_29",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_30",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_1"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_2"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_3"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_4"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_5"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_6"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_7"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_8"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_9"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_10"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_11"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_12"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_13"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_14"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_15"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_16"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_17"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_18"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_19"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_20"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_21"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_22"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_23"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_24"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_25"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_26"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_27"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_28"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_29"
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_30"
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_1",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_2",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_3",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_4",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_5",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_6",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_7",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_8",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_9",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_10",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_11",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_12",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_13",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_14",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_15",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_16",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_17",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_18",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_19",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_20",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_21",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_22",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_23",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_24",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_25",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_26",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_27",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_28",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_29",
+        "x": 90
+      },
+      {
+        "model": "cursedrelics:block/cursed_stone_brick_pillar_horizontal_30",
+        "x": 90
+      }
+    ]
+  }
+}

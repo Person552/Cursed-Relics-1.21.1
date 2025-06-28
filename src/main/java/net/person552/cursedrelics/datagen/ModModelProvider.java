@@ -19,8 +19,6 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool cursedStoneBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CURSED_STONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool smoothCursedStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_CURSED_STONE);
 
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.CURSED_STONE_BRICK_PILLAR, TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
-
         cursedStoneBricksPool.stairs(ModBlocks.CURSED_STONE_BRICK_STAIRS);
         cursedStoneBricksPool.slab(ModBlocks.CURSED_STONE_BRICK_SLAB);
         cursedStoneBricksPool.wall(ModBlocks.CURSED_STONE_BRICK_WALL);
