@@ -17,7 +17,7 @@ public class CursedCollapseEffect extends StatusEffect {
     public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (!entity.getWorld().isClient()) {
             ServerWorld world = (ServerWorld) entity.getWorld();
-            world.spawnParticles(ParticleTypes.EXPLOSION, entity.getX(), entity.getY(), entity.getZ(), 1, 0.0, 0.0, 0.0, 1.0);
+            world.spawnParticles(ParticleTypes.EXPLOSION, entity.getX(), entity.getY() + 1f, entity.getZ(), 1, 0.0, 0.0, 0.0, 1.0);
             world.playSoundFromEntity(null, entity, SoundEvents.BLOCK_DECORATED_POT_SHATTER, SoundCategory.NEUTRAL, 3f, 1f);
         }
 
