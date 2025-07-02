@@ -1,5 +1,7 @@
 package net.person552.cursedrelics.item.custom;
 
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -24,6 +26,20 @@ public class XiphanoxItem extends SwordItem {
     public int getMaxUseTime(ItemStack stack, LivingEntity user) {
         return 60;
     }
+
+    public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
+        if (user instanceof PlayerEntity) {
+            ((PlayerEntity) user).getItemCooldownManager().set(this, 50);
+        }
+    }
+
+    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+        if (user instanceof PlayerEntity) {
+            ((PlayerEntity) user).getItemCooldownManager().set(this, 50);
+        }
+        return stack;
+    }
+
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
