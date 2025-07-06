@@ -39,6 +39,5 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CURSED_KEY, Models.GENERATED);
     }
 
-
 }
 

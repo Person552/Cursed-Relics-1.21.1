@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "cursedrelics:inert_kataremi"
+    },
+    {
+      "item": "cursedrelics:inert_sanctemi"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cursedrelics:main_hand_dagger"
+  }
+}

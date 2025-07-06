@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_inert_kataremi": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cursedrelics:inert_kataremi"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_inert_sanctemi": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cursedrelics:inert_sanctemi"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cursedrelics:main_hand_dagger"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_inert_kataremi",
+      "has_inert_sanctemi"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cursedrelics:main_hand_dagger"
+    ]
+  }
+}

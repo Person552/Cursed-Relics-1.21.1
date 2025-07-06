@@ -6,6 +6,7 @@ import net.person552.cursedrelics.block.ModBlocks;
 import net.person552.cursedrelics.component.ModDataComponentTypes;
 import net.person552.cursedrelics.effect.ModEffects;
 import net.person552.cursedrelics.entity.ModBlockEntities;
+import net.person552.cursedrelics.entity.ModEntities;
 import net.person552.cursedrelics.item.ModItemGroups;
 import net.person552.cursedrelics.item.ModItems;
 import net.person552.cursedrelics.particle.ModParticles;
@@ -34,5 +35,6 @@ public class CursedRelics implements ModInitializer {
 		ModSounds.registerModSounds();
 		ModDataComponentTypes.registerDataComponentTypes();
 		ModBlockEntities.registerBlockEntities();
+		ModEntities.registerModEntities();
 	}
 }

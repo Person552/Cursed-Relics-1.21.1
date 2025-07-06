@@ -18,6 +18,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.XIPHANOX)
                 .add(ModItems.CALIBURN)
-                .add(ModItems.LACERACT);
+                .add(ModItems.LACERACT)
+                .add(ModItems.MAIN_HAND_DAGGER)
+                .add(ModItems.OFF_HAND_DAGGER);
     }
 }

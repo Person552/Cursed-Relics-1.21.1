@@ -17,5 +17,10 @@ public class ModModelPredicates {
                 ModItems.LACERACT,
                 Identifier.of(CursedRelics.MOD_ID, "shattered"),
                 (stack, world, entity, seed) -> Boolean.TRUE.equals(stack.get(ModDataComponentTypes.ACTIVE)) ? 1.0F : 0.0F);
+
+        ModelPredicateProviderRegistry.register(
+                ModItems.MAIN_HAND_DAGGER,
+                Identifier.of(CursedRelics.MOD_ID, "paired"),
+                (stack, world, entity, seed) -> Boolean.TRUE.equals(stack.get(ModDataComponentTypes.ACTIVE)) ? 0.0F : 1.0F);
     }
 }
