@@ -23,10 +23,13 @@ public class ModItemGroups {
                         entries.add(ModItems.CURSED_INGOT);
 
                         entries.add(ModItems.CURSED_KEY);
+                        entries.add(ModItems.INERT_KATAREMI);
+                        entries.add(ModItems.INERT_SANCTEMI);
 
                         entries.add(ModItems.CALIBURN);
                         entries.add(ModItems.XIPHANOX);
                         entries.add(ModItems.LACERACT);
+                        entries.add(ModItems.MAIN_HAND_DAGGER);
 
                         entries.add(ModBlocks.CURSED_STONE_BRICKS);
                         entries.add(ModBlocks.CURSED_STONE_BRICK_STAIRS);

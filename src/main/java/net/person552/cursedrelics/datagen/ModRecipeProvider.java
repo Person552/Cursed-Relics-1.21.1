@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -57,6 +58,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("#")
                 .input('#', ModBlocks.CURSED_STONE_BRICK_SLAB)
                 .criterion(hasItem(ModBlocks.CURSED_STONE_BRICKS), conditionsFromItem(ModBlocks.CURSED_STONE_BRICKS))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MAIN_HAND_DAGGER)
+                .input(ModItems.INERT_KATAREMI)
+                .input(ModItems.INERT_SANCTEMI)
+                .criterion(hasItem(ModItems.INERT_KATAREMI), conditionsFromItem(ModItems.INERT_KATAREMI))
+                .criterion(hasItem(ModItems.INERT_SANCTEMI), conditionsFromItem(ModItems.INERT_SANCTEMI))
                 .offerTo(exporter);
     }
 }

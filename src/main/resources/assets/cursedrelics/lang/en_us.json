@@ -3,12 +3,18 @@
   "item.cursedrelics.cursed_fragment": "Cursed Fragment",
   "item.cursedrelics.cursed_handle": "Cursed Handle",
   "item.cursedrelics.cursed_ingot": "Cursed Ingot",
+  "item.cursedrelics.inert_sanctemi": "Inert Sanctemi",
+  "item.cursedrelics.inert_kataremi": "Inert Kataremi",
 
   "item.cursedrelics.cursed_key": "Cursed Key",
 
   "item.cursedrelics.caliburn": "Caliburn",
   "item.cursedrelics.xiphanox": "Xiphanox",
   "item.cursedrelics.laceract": "Laceract",
+  "item.cursedrelics.main_hand_dagger": "Sanctemi",
+  "item.cursedrelics.off_hand_dagger": "Kataremi",
+  "item.cursedrelics.both_daggers": "Sanctemi & Kataremi",
+
 
   "block.cursedrelics.cursed_stone_bricks": "Cursed Stone Bricks",
   "block.cursedrelics.cursed_stone_brick_stairs": "Cursed Stone Brick Stairs",
