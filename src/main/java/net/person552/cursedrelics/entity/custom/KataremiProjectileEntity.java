@@ -1,27 +1,25 @@
 package net.person552.cursedrelics.entity.custom;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityStatuses;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.data.DataTracker;
-import net.minecraft.entity.mob.BlazeEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.entity.projectile.ProjectileUtil;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.person552.cursedrelics.entity.ModEntities;
 
 public class KataremiProjectileEntity extends ProjectileEntity {
-    public KataremiProjectileEntity(EntityType<? extends ProjectileEntity> entityType, LivingEntity owner, World world) {
+    protected Float damage;
+    public KataremiProjectileEntity(EntityType<? extends ProjectileEntity> entityType, LivingEntity owner, World world, Float damage) {
         super(entityType, world);
         this.setPos(owner.getX(), owner.getEyeY() - 0.1F, owner.getZ());
         this.setOwner(owner);
-    }
+        this.damage = damage;
+}
 
     public KataremiProjectileEntity(EntityType<? extends ProjectileEntity> entityType, World world) {
         super(entityType, world);
@@ -50,7 +48,10 @@ public class KataremiProjectileEntity extends ProjectileEntity {
     protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
-        entity.damage(this.getDamageSources().thrown(this, this.getOwner()), 7f);
+        if (!this.getWorld().isClient()) {
+            entity.damage(this.getDamageSources().thrown(this, this.getOwner()), this.damage);
+            this.discard();
+        }
     }
 
     @Override

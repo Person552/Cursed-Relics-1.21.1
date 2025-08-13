@@ -1,7 +1,10 @@
 package net.person552.cursedrelics.item;
 
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.UnbreakableComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.TridentItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -18,12 +21,30 @@ public class ModItems {
     public static final Item INERT_SANCTEMI = registerItem("inert_sanctemi", new Item(new Item.Settings()));
 
     public static final Item CURSED_KEY = registerItem("cursed_key", new Item(new Item.Settings()));
-    
-    public static final Item CALIBURN = registerItem("caliburn", new CaliburnItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 6, -3F))));
-    public static final Item XIPHANOX = registerItem("xiphanox", new XiphanoxItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 6, -3F))));
-    public static final Item LACERACT = registerItem("laceract", new LaceractItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 0, -2F))));
-    public static final Item MAIN_HAND_DAGGER = registerItem("main_hand_dagger", new MainHandDaggerItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 0, -2F))));
-    public static final Item OFF_HAND_DAGGER = registerItem("off_hand_dagger", new OffHandDaggerItem(ModToolMaterials.RELIC, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 0, -2F))));
+
+    protected static final Item.Settings UNBREAKABLE_SETTINGS = new Item.Settings()
+            .maxCount(1)
+            .maxDamage(0)
+            .component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(true));
+
+    public static final Item CALIBURN = registerItem("caliburn", new CaliburnItem(ModToolMaterials.RELIC,
+            UNBREAKABLE_SETTINGS
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 6, -3F))));
+
+    public static final Item XIPHANOX = registerItem("xiphanox", new XiphanoxItem(ModToolMaterials.RELIC,
+            UNBREAKABLE_SETTINGS
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 6, -3F))));
+
+    public static final Item LACERACT = registerItem("laceract", new LaceractItem(ModToolMaterials.RELIC,
+            UNBREAKABLE_SETTINGS
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 0, -2F))));
+
+    public static final Item MAIN_HAND_DAGGER = registerItem("main_hand_dagger", new MainHandDaggerItem(
+            UNBREAKABLE_SETTINGS
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RELIC, 0, -2F))
+                    .component(DataComponentTypes.TOOL, TridentItem.createToolComponent())));
+
+    public static final Item OFF_HAND_DAGGER = registerItem("off_hand_dagger", new OffHandDaggerItem(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {

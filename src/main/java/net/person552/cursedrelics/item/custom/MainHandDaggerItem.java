@@ -1,31 +1,40 @@
 package net.person552.cursedrelics.item.custom;
 
+import net.minecraft.block.BlockState;
+import net.minecraft.component.type.ToolComponent;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.person552.cursedrelics.CursedRelics;
 import net.person552.cursedrelics.component.ModDataComponentTypes;
 import net.person552.cursedrelics.item.ModItems;
 
-public class MainHandDaggerItem extends SwordItem {
-    public MainHandDaggerItem(ToolMaterial toolMaterial, Settings settings) {
-        super(toolMaterial, settings);
+import java.util.List;
+
+public class MainHandDaggerItem extends Item {
+    public MainHandDaggerItem(Settings settings) {
+        super(settings);
     }
+
+    public static ToolComponent createToolComponent() {
+        return new ToolComponent(List.of(), 1.0F, 2);
+    }
+
+    public boolean canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner) { return !miner.isCreative(); }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (!Boolean.TRUE.equals(user.getStackInHand(hand).get(ModDataComponentTypes.ACTIVE))) {
             if (hand == Hand.MAIN_HAND) {
                 if (user.getStackInHand(Hand.OFF_HAND).isEmpty()) {
-                    CursedRelics.LOGGER.info("do the dagger thing now");
+                    //do the dagger thing now
 
                     user.getStackInHand(hand).set(ModDataComponentTypes.ACTIVE, Boolean.TRUE);
 
@@ -34,17 +43,28 @@ public class MainHandDaggerItem extends SwordItem {
 
                     return TypedActionResult.success(user.getStackInHand(hand));
                 } else {
-                    CursedRelics.LOGGER.info("clear your offhand");
+                    //clear your offhand
                     return TypedActionResult.fail(user.getStackInHand(hand));
                 }
             } else {
-                CursedRelics.LOGGER.info("use it in your main hand");
+                //use it in your main hand
                 return TypedActionResult.fail(user.getStackInHand(hand));
             }
         } else {
-            CursedRelics.LOGGER.info("already active");
+            //already active
             return TypedActionResult.fail(user.getStackInHand(hand));
         }
+    }
+
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        if (Boolean.TRUE.equals(stack.get(ModDataComponentTypes.ACTIVE))) {
+            ItemStack offHandStack = attacker.getOffHandStack();
+            Integer stackCharges = offHandStack.get(ModDataComponentTypes.CHARGES) == null ? 0 : offHandStack.get(ModDataComponentTypes.CHARGES);
+            if (stackCharges < 3) {
+                offHandStack.set(ModDataComponentTypes.CHARGES, stackCharges + 1);
+            }
+        }
+        return false;
     }
 
     @Override

@@ -12,6 +12,7 @@ import java.util.function.UnaryOperator;
 public class ModDataComponentTypes {
     public static final ComponentType<String> LATEST_TARGET_ID  = register("latest_target_id",builder -> builder.codec(Codec.STRING));
     public static final ComponentType<Boolean> ACTIVE  = register("active",builder -> builder.codec(Codec.BOOL));
+    public static final ComponentType<Integer> CHARGES = register("charges", builder -> builder.codec(Codec.INT));
 
     private static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderOperator) {
         return Registry.register(Registries.DATA_COMPONENT_TYPE, Identifier.of(CursedRelics.MOD_ID, name),

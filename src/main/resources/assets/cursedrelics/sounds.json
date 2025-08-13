@@ -1,3 +1,14 @@
 {
-
+  "kataremi_shoot": {
+    "subtitle": "sounds.cursedrelics.kataremi_shoot",
+    "sounds": [
+      "cursedrelics:shoot"
+    ]
+  },
+  "kataremi_shoot_big": {
+    "subtitle": "sounds.cursedrelics.kataremi_shoot_big",
+    "sounds": [
+      "cursedrelics:shoot_big"
+    ]
+  }
 }

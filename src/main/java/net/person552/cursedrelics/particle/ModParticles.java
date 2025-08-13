@@ -11,6 +11,10 @@ public class ModParticles {
      public static final SimpleParticleType HOLY_FIRE_PARTICLE =
              registerParticle("holy_fire_particle", FabricParticleTypes.simple(false));
 
+    public static final SimpleParticleType CURSED_COLLAPSE_PARTICLE =
+            registerParticle("cursed_collapse_particle", FabricParticleTypes.simple(true));
+
+
     private static SimpleParticleType registerParticle(String name, SimpleParticleType particleType) {
         return Registry.register(Registries.PARTICLE_TYPE, Identifier.of(CursedRelics.MOD_ID, name), particleType);
     }

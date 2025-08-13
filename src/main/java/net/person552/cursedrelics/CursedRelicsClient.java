@@ -8,6 +8,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.person552.cursedrelics.block.ModBlocks;
 import net.person552.cursedrelics.entity.ModEntities;
 import net.person552.cursedrelics.entity.client.KataremiProjectileRenderer;
+import net.person552.cursedrelics.particle.CursedCollapseParticle;
 import net.person552.cursedrelics.particle.HolyFireParticle;
 import net.person552.cursedrelics.particle.ModParticles;
 import net.person552.cursedrelics.util.ModModelPredicates;
@@ -16,6 +17,7 @@ public class CursedRelicsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ParticleFactoryRegistry.getInstance().register(ModParticles.HOLY_FIRE_PARTICLE, HolyFireParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.CURSED_COLLAPSE_PARTICLE, CursedCollapseParticle.Factory::new);
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CURSED_TRIAL_SPAWNER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CURSED_VAULT, RenderLayer.getCutout());
