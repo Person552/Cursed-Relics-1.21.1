@@ -19,6 +19,7 @@ public class ModItems {
     public static final Item CURSED_INGOT = registerItem("cursed_ingot", new Item(new Item.Settings()));
     public static final Item INERT_KATAREMI = registerItem("inert_kataremi", new Item(new Item.Settings()));
     public static final Item INERT_SANCTEMI = registerItem("inert_sanctemi", new Item(new Item.Settings()));
+    public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings().maxDamage(3)));
 
     public static final Item CURSED_KEY = registerItem("cursed_key", new Item(new Item.Settings()));
 

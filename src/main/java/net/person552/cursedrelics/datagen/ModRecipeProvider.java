@@ -5,12 +5,14 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.person552.cursedrelics.block.ModBlocks;
 import net.person552.cursedrelics.item.ModItems;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -60,11 +62,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.CURSED_STONE_BRICKS), conditionsFromItem(ModBlocks.CURSED_STONE_BRICKS))
                 .offerTo(exporter);
 
+        //Kataremi & Sanctemi
         ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MAIN_HAND_DAGGER)
                 .input(ModItems.INERT_KATAREMI)
                 .input(ModItems.INERT_SANCTEMI)
                 .criterion(hasItem(ModItems.INERT_KATAREMI), conditionsFromItem(ModItems.INERT_KATAREMI))
                 .criterion(hasItem(ModItems.INERT_SANCTEMI), conditionsFromItem(ModItems.INERT_SANCTEMI))
                 .offerTo(exporter);
+
+        //Sapphire smelting
+        List<ItemConvertible> SAPPHIRE_SMELTABLES = List.of(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+
+        offerSmelting(exporter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE, 1.0f, 200, "sapphire");
+        offerBlasting(exporter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE, 1.0f, 100, "sapphire");
     }
 }

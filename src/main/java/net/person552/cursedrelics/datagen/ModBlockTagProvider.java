@@ -19,7 +19,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CHISELED_CURSED_STONE_BRICKS)
                 .add(ModBlocks.CURSED_STONE_BRICKS)
                 .add(ModBlocks.CURSED_STONE_BRICK_PILLAR)
-                .add(ModBlocks.SMOOTH_CURSED_STONE);
+                .add(ModBlocks.SMOOTH_CURSED_STONE)
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.CURSED_STONE_BRICK_WALL);
@@ -27,5 +28,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
                 .add(ModBlocks.SMOOTH_CURSED_STONE_PRESSURE_PLATE)
                 .add(ModBlocks.CURSED_STONE_BRICK_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+
     }
 }

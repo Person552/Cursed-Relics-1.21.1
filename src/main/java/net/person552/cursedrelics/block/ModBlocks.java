@@ -63,6 +63,9 @@ public class ModBlocks {
     public static final CursedVaultBlock CURSED_VAULT = (CursedVaultBlock) registerBlock("cursed_vault",
             new CursedVaultBlock(AbstractBlock.Settings.copy(Blocks.VAULT)));
 
+    public static final Block DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
+            new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_EMERALD_ORE)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(CursedRelics.MOD_ID, name), block);

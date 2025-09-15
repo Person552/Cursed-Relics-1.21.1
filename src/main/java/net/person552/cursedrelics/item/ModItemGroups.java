@@ -22,6 +22,9 @@ public class ModItemGroups {
                         entries.add(ModItems.CURSED_HANDLE);
                         entries.add(ModItems.CURSED_INGOT);
 
+                        entries.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+                        entries.add(ModItems.SAPPHIRE);
+
                         entries.add(ModItems.CURSED_KEY);
                         entries.add(ModItems.INERT_KATAREMI);
                         entries.add(ModItems.INERT_SANCTEMI);
