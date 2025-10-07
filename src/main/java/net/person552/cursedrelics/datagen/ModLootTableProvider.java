@@ -20,6 +20,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SMOOTH_CURSED_STONE);
         addDrop(ModBlocks.SMOOTH_CURSED_STONE_STAIRS);
         addDrop(ModBlocks.SMOOTH_CURSED_STONE_PRESSURE_PLATE);
+        addDrop(ModBlocks.SMOOTH_CURSED_STONE_WALL);
         addDrop(ModBlocks.SMOOTH_CURSED_STONE_SLAB, slabDrops(ModBlocks.CURSED_STONE_BRICK_SLAB));
 
         addDrop(ModBlocks.CURSED_STONE_BRICKS);

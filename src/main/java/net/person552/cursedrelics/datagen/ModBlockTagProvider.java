@@ -23,7 +23,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(ModBlocks.CURSED_STONE_BRICK_WALL);
+                .add(ModBlocks.CURSED_STONE_BRICK_WALL)
+                .add(ModBlocks.SMOOTH_CURSED_STONE_WALL);
 
         getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
                 .add(ModBlocks.SMOOTH_CURSED_STONE_PRESSURE_PLATE)

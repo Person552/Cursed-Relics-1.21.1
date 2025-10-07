@@ -53,6 +53,9 @@ public class ModBlocks {
     public static final Block SMOOTH_CURSED_STONE_SLAB = registerBlock("smooth_cursed_stone_slab",
             new SlabBlock(AbstractBlock.Settings.copy(SMOOTH_CURSED_STONE)));
 
+    public static final Block SMOOTH_CURSED_STONE_WALL = registerBlock("smooth_cursed_stone_wall",
+            new WallBlock(AbstractBlock.Settings.copy(SMOOTH_CURSED_STONE)));
+
     public static final Block SMOOTH_CURSED_STONE_PRESSURE_PLATE = registerBlock("smooth_cursed_stone_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(SMOOTH_CURSED_STONE)));
 

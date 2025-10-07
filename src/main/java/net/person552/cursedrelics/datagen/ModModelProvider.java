@@ -26,6 +26,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool smoothCursedStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_CURSED_STONE);
         smoothCursedStonePool.stairs(ModBlocks.SMOOTH_CURSED_STONE_STAIRS);
         smoothCursedStonePool.slab(ModBlocks.SMOOTH_CURSED_STONE_SLAB);
+        smoothCursedStonePool.wall(ModBlocks.SMOOTH_CURSED_STONE_WALL);
         smoothCursedStonePool.pressurePlate(ModBlocks.SMOOTH_CURSED_STONE_PRESSURE_PLATE);
     }
 

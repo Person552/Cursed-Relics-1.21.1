@@ -43,6 +43,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SMOOTH_CURSED_STONE);
                         entries.add(ModBlocks.SMOOTH_CURSED_STONE_STAIRS);
                         entries.add(ModBlocks.SMOOTH_CURSED_STONE_SLAB);
+                        entries.add(ModBlocks.SMOOTH_CURSED_STONE_WALL);
                         entries.add(ModBlocks.SMOOTH_CURSED_STONE_PRESSURE_PLATE);
 
                         entries.add(ModBlocks.CURSED_STONE_BRICK_PILLAR);
